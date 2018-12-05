@@ -1,0 +1,20 @@
+
+
+logbase: /apps/logs/csass/
+
+system: PLATFORM
+
+
+output: '[{TIME}] [INFO] [{SYSTEM}] [{MODULE}] [{NODE}] [{IPADDR}] [] [Runtime] [] [CPU={CPU}%, DISK={DISK}%, MEMORY={MEMORY}%, TCPU={SYSTEM_CPU}%] [] []'
+
+programs:
+  -
+    name: TEST1
+    program: java
+    command: auth-rest-services
+
+  -
+    name: TEST2
+    program: java
+    command: tasks-rest
+
